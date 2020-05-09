@@ -87,6 +87,12 @@ target 'covidtracker' do
 
   pod 'react-native-netinfo', :path => '../node_modules/@react-native-community/netinfo'
 
+  pod 'appcenter-core', :path => '../node_modules/appcenter'
+
+  pod 'appcenter-analytics', :path => '../node_modules/appcenter-analytics'
+
+  pod 'appcenter-crashes', :path => '../node_modules/appcenter-crashes'
+
   target 'covidtrackerTests' do
     inherit! :complete
     # Pods for testing

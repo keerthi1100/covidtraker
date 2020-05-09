@@ -14,6 +14,7 @@ import Dialog, { DialogContent } from 'react-native-popup-dialog';
 import {DotIndicator} from 'react-native-indicators';
 import { SearchBar } from 'react-native-elements';
 import NetInfo from "@react-native-community/netinfo";
+import Crashes from 'appcenter-crashes';
 
 
 
@@ -36,6 +37,8 @@ export default class App extends Component {
 		"total_tests": "7,727,938"}};
 
 		this.checkInternerConnection();
+
+		Crashes.generateTestCrash();
   }
 
   checkInternerConnection =()=>
