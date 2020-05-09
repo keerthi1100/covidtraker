@@ -14,6 +14,7 @@ import Dialog, { DialogContent } from 'react-native-popup-dialog';
 import {DotIndicator} from 'react-native-indicators';
 import { SearchBar } from 'react-native-elements';
 import NetInfo from "@react-native-community/netinfo";
+import Crashes from 'appcenter-crashes'
 
 
 
@@ -76,7 +77,9 @@ export default class App extends Component {
 
 	  if(!isNetworkConnected)
 	  {
-			Alert.alert("Please connect to internet and try again !!!")
+			Alert.alert("Please connect to internet and try again !!!");
+			Crashes.generateTestCrash();
+			
 	  }
       Alert.alert("Somthing went wrong please turn on internet or try after somtimes")
     });
