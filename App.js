@@ -142,7 +142,7 @@ export default class App extends Component {
 				</Text>
 
 				<SearchBar
-        placeholder="Countery Serach"
+        placeholder="Search by Country"
         onChangeText={this.updateSearch}
         value={search}
       />
